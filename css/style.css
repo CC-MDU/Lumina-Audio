@@ -57,24 +57,28 @@ margin:0;
     font-family: 'dm-sans', sans-serif;
 
    & span:hover{
-        font-weight: 800;
+        font-weight: bold;
     }
+    
 }
 
-.bed-stjerner{
+/*styling af logo*/
+
+.nav-logo img{
     width:100px;
     height:auto;
-    margin-top:-10px;
+    margin: top 80px;
 }
-.logo img{
-    width:100px;
-    height:auto;
-    margin-top:-40px;
+
+.nav-logo{
+    align-items:center;
+    text-decoration:none;
+    margin-top: 20px;
 }
 /*vores navigationsbar*/
 nav{
     position:absolute;
-    top: -2px;
+    top: 30px;
     left: 0;
     right: 0;
     display: grid;
@@ -83,17 +87,17 @@ nav{
     padding: 0 3rem;
     z-index: 2;
     column-gap: 7rem;
+
 }
 
 /*Styling af links inde i vores navigationsbar*/
 nav a{
-    color:#4b3b2a;
+    color: var(--contrast);
     text-decoration: none;
-    font-weight: 600;
-    font-size: 1.5rem;
+    font-size: 16px;
     margin-bottom:20px;
-    word-spacing: 1.5em;
     display: flex;
+    font-family: 'outfit', sans-serif;
     
 }
 
@@ -105,12 +109,45 @@ nav a{
     gap:2rem;
     align-items: center;
     top:-3px;
+    padding: 0 3rem;
+    justify-content: flex-end;
+}
+
+/* Ikoner */
+.nav-ikoner img {
+    width: 35px;
+    height: 35px;
+}
+
+/* Hover på søgeikon */
+.nav-ikoner a:nth-child(1):hover img {
+    content: url("../img_ikoner/searchbold.svg");
+}
+
+.nav-ikoner a:nth-child(2):hover img {
+    content: url("../img_ikoner/personfill.svg");
+}
+
+.nav-ikoner a:nth-child(3):hover img {
+    content: url("../img_ikoner/heartfill.svg");
+}
+
+.nav-ikoner a:nth-child(4):hover img {
+    content: url("../img_ikoner/bagfill.svg");
 }
 
 /*række af vores tekst links*/
 .nav-links{
     display: flex;
     gap:3rem;
+    align-items: center;
+    list-style: none;
+    a:hover {
+    font-weight: bold;
+}
+a {
+    transition: font-weight 0.2s ease;
+}
 }
 
 /*vores hero sektion*/
