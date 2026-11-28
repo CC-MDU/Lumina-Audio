@@ -203,8 +203,8 @@ a {
     gap: 8px;
 }
 
-/* Hver knap: udseende */
-.hero-knapper .knap{
+/* Styling og hover på knapper */
+.knap{
     background-color: var(--cta-color);
     color: var(--background);
     border: 2px solid var(--cta-color);
@@ -218,42 +218,159 @@ a {
 }
 
 /* Hover: kun den knap, musen er over */
-.hero-knapper .knap:hover,
-.hero-knapper .knap:focus-visible{
+.knap:hover,
+.knap:focus-visible{
     background-color: var(--background);
     color: var(--cta-color);
 }
 
 /* Ikon og tekst på række */
-.hero-knapper .knap{
+.knap{
     display: inline-flex;
     align-items: center;
     gap: 8px;
 }
 
 /* Ikonernes størrelse */
-.hero-knapper .knap img{
+.knap img{
     width: 18px;
     height: 18px;
 }
 
 /* Normal: skjul det mørke */
-.hero-knapper .ikon-moerk{
+.knap .ikon-moerk{
     display: none;
 }
 
 /* Hover: skjul det lyse */
-.hero-knapper .knap:hover .ikon-lys,
-.hero-knapper .knap:focus-visible .ikon-lys{
+.knap:hover .ikon-lys,
+.knap:focus-visible .ikon-lys{
     display: none;
 }
 
 /* Hover: vis det mørke */
-.hero-knapper .knap:hover .ikon-moerk,
-.hero-knapper .knap:focus-visible .ikon-moerk{
+.knap:hover .ikon-moerk,
+.knap:focus-visible .ikon-moerk{
     display: block;
 }
 
+
+/* Våd og tør sektion */
+
+.vaad-toer-sektion {
+    display: flex;
+    justify-content: center;
+    padding: 80px 20px;
+}
+
+.toer-sektion,
+.vaad-sektion {
+    display: none;
+    width: 100%;
+    max-width: 1100px;
+    text-align: center;
+    padding: 60px;
+    background-color: var(--border-color);
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+}
+
+.toer-sektion.aktiv,
+.vaad-sektion.aktiv {
+    display: block;
+}
+
+/* Billede og tekst ved siden af hinanden */
+
+.kort-indhold {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "tekst billede";
+    align-items: center;
+    gap: 30px;
+}
+
+/* Produktbilleder */
+
+.toer-billede,
+.vaad-billede {
+    grid-area: billede;
+}
+
+.toer-billede img,
+.vaad-billede img {
+    width: 100%;
+    height: 550px;
+    object-fit: contain;
+}
+
+/* Produktinformation */
+
+.produkt-info {
+    grid-area: tekst;
+    text-align: center;
+}
+
+.produkt-info h2 {
+    font-family: 'outfit', sans-serif;
+    font-size: 48px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.produkt-info p {
+    font-family: 'dm-sans', sans-serif;
+    font-size: 17px;
+    line-height: 1.5;
+    margin-top: 10px;
+}
+
+/* Egenskaber */
+
+.egenskaber {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.egenskab {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    font-family: 'dm-sans', sans-serif;
+    color:var(--contrast)
+}
+
+.egenskab img {
+    width: 30px;
+    height: 30px;
+}
+
+/* Produktknapper */
+
+.produkt-knapper {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+
+/* Skift mellem våd og tør */
+
+.skift-vaad,
+.skift-toer {
+    display: block;
+    margin: 15px auto 0;
+    padding: 0;
+    background: none;
+    border: none;
+    color: var(--contrast);
+    font-family: 'dm-sans', sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+}
 
 
 
