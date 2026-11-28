@@ -4,7 +4,7 @@ function skiftvaad() {
     document.querySelector('.vaad-sektion').classList.add('aktiv');
 }
 
-function skifttør() {
+function skifttoer() {
     document.querySelector('.vaad-sektion').classList.remove('aktiv');
     document.querySelector('.tør-sektion').classList.add('aktiv');
 }
