@@ -11,7 +11,6 @@
 
 <body>
  
-
 <!--Siden starter her-->
 <header>
 
@@ -25,20 +24,9 @@ class="announcement-bar">
 
 </header>
 
+<!-- Navigationsbar -->
 
-<main>
-
-
-<!-- Video her -->
-<div class="hero">
-    <video id="hero-video" autoplay muted loop playsinline>
-        <source src="img/herovideo.mov" type="video/mp4">
-    </video>
-    </div>
-
-<!--Navigation her -->
-<header>
-    <nav class="navbar">
+<nav class="navbar">
 
         <!-- Logo -->
         <a href="index.html" class="nav-logo">
@@ -71,15 +59,130 @@ class="announcement-bar">
         </div>
 
     </nav>
-</header>
 
 
+<!-- Main starter her -->
+<main>
 
 
-<div class="hero-tekst">
-    <h1>LUMINA AUDIO</h1>
-    <p>En lille højtaler. Store øjeblikke</p>
+<!-- Hero sektion -->
+<div class="hero">
+    <video id="hero-video" autoplay muted loop playsinline>
+        <source src="img/herovideo.mov" type="video/mp4">
+    </video>
+    <div class="hero-tekst">
+        <h1>LUMINA One</h1>
+        <p>En lille højtaler. Store øjeblikke </p>
+        <div class="hero-knapper">
+    <button type="button" class="knap">
+        <img src="img_ikoner/bag_light.svg" alt="" class="ikon-lys">
+        <img src="img_ikoner/bag_dark.svg" alt="" class="ikon-moerk">
+        Køb nu
+    </button>
+
+    <a href="#laes-mere" class="knap">
+        <img src="img_ikoner/play_light.svg" alt="" class="ikon-lys">
+        <img src="img_ikoner/play_dark.svg" alt="" class="ikon-moerk">
+        Læs mere
+    </a>
 </div>
+    </div>
+    </div>
+
+<!-- Lumina One våd og tør her -->
+
+<section class="våd-tør-sektion">
+    <div class="tør-sektion">
+
+        <div class="tør-billede">
+            <img src="images/speakerdry.svg" alt="billede af højtaler">
+        </div>
+<h2>LUMINA One</h2>
+<p>
+Kraftfuld lyd, stemningsfuldt lys og et tidsløst design, der kan følge dig overalt.
+</p>
+
+<div class="egenskaber">
+    <div class="egenskab">
+        <img src="img_ikoner/battery.svg" alt="batteri ikon">
+        <span>18 timer</span>
+    </div>
+
+    <div class="egenskab">
+        <img src="img_ikoner/soundwave.svg" alt="lydstyrke ikon">
+        <span>100 dB</span>
+    </div>
+
+    <div class="egenskab">
+        <img src="img_ikoner/fjer.svg" alt="vægt ikon">
+        <span>1,5 kg</span>
+    </div>
+</div>
+
+<div class="produkt-knapper">
+<button type="button" class="knap">
+        <img src="img_ikoner/bag_light.svg" alt="" class="ikon-lys">
+        <img src="img_ikoner/bag_dark.svg" alt="" class="ikon-moerk">
+        Køb nu
+    </button>
+
+    <a href="#laes-mere" class="knap">
+        <img src="img_ikoner/play_light.svg" alt="" class="ikon-lys">
+        <img src="img_ikoner/play_dark.svg" alt="" class="ikon-moerk">
+        Læs mere
+    </a>
+</div>
+
+<button class="skift-vaad" onclick="skiftvaad()">
+    Se LUMINA One i vand
+</button>
+</div>
+
+
+<!-- Våd version -->
+<div class="vaad-sektion">
+
+    <div class="vaad-billede">
+        <img src="images/speakerwet.svg" alt="Våd LUMINA One">
+    </div>
+
+    <h2>Musik uden begrænsninger</h2>
+
+    <p>
+    Tag LUMINA One med dig til poolen, stranden og slip bekymringerne for våde fingre eller regn. 
+    </p>
+
+    <div class="egenskaber">
+
+        <div class="egenskab">
+            <img src="img_ikoner/drop.svg" alt="Vand">
+            <span>IPX7</span>
+        </div>
+
+    </div>
+
+    <div class="produkt-knapper">
+    <button type="button" class="knap">
+        <img src="img_ikoner/bag_light.svg" alt="" class="ikon-lys">
+        <img src="img_ikoner/bag_dark.svg" alt="" class="ikon-moerk">
+        Køb nu
+    </button>
+
+    <a href="#laes-mere" class="knap">
+        <img src="img_ikoner/play_light.svg" alt="" class="ikon-lys">
+        <img src="img_ikoner/play_dark.svg" alt="" class="ikon-moerk">
+        Læs mere
+    </a>
+</div>
+
+    <button class="skift-tør" onclick="skifttør()">
+        Se LUMINA One
+    </button>
+
+</div>
+
+
+</section>
 
 
  <section id="Kollektioner">
